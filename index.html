@@ -105,11 +105,11 @@
             TC39 - Who is in it?
           </h2>
 
-          <p class="fragment">
+          <p class="fragment" style="font-size: 32px">
             Members of ECMA are not individuals, they are organizations and corporations.
           </p>
 
-          <p class="fragment">
+          <p class="fragment" style="font-size: 32px">
             As such, the members of the Technical committee 39 are organizations, not individuals,
             but it is attended by individuals representing those organizations.
           </p>
@@ -120,7 +120,7 @@
             TC39 - what do they actually do?
           </h2>
 
-          <p class="fragment">
+          <p class="fragment" style="font-size: 32px">
             They meet on a regular basis and review proposals that are made for the language. They
             standardize the language and ensure that it conforms to certain requirements
           </p>
@@ -130,7 +130,7 @@
           <h2>
             What does a proposal look like?
           </h2>
-          <p class="fragment">
+          <p class="fragment" style="font-size: 32px">
             It is a long process, and is done in four (five) parts!
           </p>
         </section>
@@ -139,21 +139,21 @@
             Stage 0: Strawman
           </h2>
           <p class="fragment" style="font-size: 32px">
-            Got an idea? Here is how you start:
+            A lot of writing!
           </p>
           <p class="fragment" style="font-size: 32px">
-            You will need to find a TC39 Champion (someone on the committee) to pick up your idea and presents it. You can get into this process
+            1) You will need to find a TC39 Champion (some member on the committee) to pick up your idea and presents it. You can get into this process
             in a few ways. By registering on ECMA international, or via <a
              href="https://esdiscuss.org/">esdiscuss</a>
           </p>
           <p class="fragment" style="font-size: 32px">
-            At this stage you need a good idea, not necessarily a demo (yet)
+            2) A problem space outline needs to be written -- what are you trying to solve?
           </p>
           <p class="fragment" style="font-size: 32px">
-            if your idea isn't rejected, then you can continue working on it!
+            3) What kind of algorithms, abstractions, and semantics will be involved?
           </p>
           <p class="fragment" style="font-size: 32px">
-            expect a LOT of changes and critiques
+            4) What kind of implementation issues do you forsee?
           </p>
         </section>
 
@@ -162,17 +162,14 @@
             Stage 1: Proposal
           </h2>
           <p class="fragment" style="font-size: 32px">
-            Ok. You made it past the first stage, now you need a demo!
+            1) you will need a demo. This can take the form of a polyfill or similar
           </p>
           <p class="fragment" style="font-size: 32px">
-            In this stage you create an initial draft, often with a lot of feedback
+            2) you will need to write a spec. A spec defines the feature to be implemented in
+            abstract terms. There are several spec languages, and ECMA Script uses one of them
           </p>
           <p class="fragment" style="font-size: 32px">
-            You will need to create an implementation that shows the proposed behavior, often as a
-            polyfill or something similar.
-          </p>
-          <p class="fragment" style="font-size: 32px">
-            expect some significant changes
+            Expect a LOT of changes and critiques
           </p>
         </section>
 
@@ -181,7 +178,7 @@
             Stage 2: Draft
           </h2>
           <p class="fragment" style="font-size: 32px">
-            Woo! Draft stage! You have a demo, and you are starting to get specific
+            Your Initial spec text should cover the following:
           </p>
           <div class="fragment">
             <blockquote style="font-size: 32px">
@@ -194,11 +191,11 @@
             </p>
           </div>
           <p class="fragment" style="font-size: 32px">
-            This means, you will have to write a language spec! This means describing the semantics
-            and syntax using formal spec language.
+            Things should get more precise and concrete. You are working towards a final draft of
+            the spec.
           </p>
           <p class="fragment" style="font-size: 32px">
-            expect some (but often minor) changes
+            expect some (but often incremental) changes
           </p>
         </section>
 
@@ -207,17 +204,22 @@
             Stage 3: Candidate
           </h2>
           <p class="fragment" style="font-size: 32px">
-            Congratz! you have a Candidate. That means that it now needs input from a LOT of users.
-            It needs to go out into the wild. This might be as a browser implementation or similar.
-            You need lots of feedback from people who use your new feature.
+            It is expected at this point that all Semantics, syntax, and API are fully described by
+            this stage. The solution should be considered complete at this point.
           </p>
           <p class="fragment" style="font-size: 32px">
             You will also need to write test262 acceptance tests, so that those implementing your
             feature in the future will be able to run them against your tests.
           </p>
           <p class="fragment" style="font-size: 32px">
-            expect critical changes which will probably be suggested by people based on their
-            implementation experience
+            This is the period in which you will be collecting lots of feedback from users
+          </p>
+          <p class="fragment" style="font-size: 32px">
+            Requires two complete implementations that have passed your acceptance
+            tests.
+          </p>
+          <p class="fragment" style="font-size: 32px">
+            You will make a PR to tc39/ecma262 with the integrated spec text!
           </p>
         </section>
 
@@ -230,7 +232,7 @@
           </p>
           <p class="fragment" style="font-size: 32px">
             Now, it is up to browsers and engine writers to implement your feature. It may still be
-            some time before users use your new feature!
+            some time before some users use your new feature!
           </p>
         </section>
 
@@ -259,14 +261,13 @@
             Questions? Happy to hear them!
           </h2>
           <p class="fragment" style="font-size: 32px">
-            We are doing a TC39 Panel with people working on the committee and also people writing
-            proposals at JSConfEU!
+            There will be a TC39 Panel at JSConfEU!
           </p>
           <p class="fragment" style="font-size: 32px">
             Feel free to tweet your questions to us as they come to you using the hashtag #tc39qs
           </p>
           <p class="fragment" style="font-size: 32px">
-            Or! Just come talk to me, I am taking notes!
+            Or! Just come talk to me, I am taking notes! (my name is Yulia)
           </p>
         </section>
 
