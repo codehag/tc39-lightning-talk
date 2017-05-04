@@ -1,0 +1,299 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>TC39 Intro Talk</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+          <h2>
+            What is TC39?
+          </h2>
+
+          <div class="fragment">
+            <a href="https://www.ecma-international.org/memento/TC39.htm" target="_blank">Technical Committee 39 of ECMA International
+            </a>
+          </div>
+        </section>
+
+				<section>
+          <h2>
+            Wait, what is ECMA??
+          </h2>
+
+          <div class="fragment" style="font-weight: 400">
+            <strong style="color: red">E</strong>uropean <strong style="color:
+              red">C</strong>omputer <strong style="color: red">M</strong>anufacturers <strong style="color: red">A</strong>ssociation
+          </div>
+          <div class="fragment" style="font-size: 32px">
+            (yep, we are technically programming European Computer Manufacturers Association Script)
+          </div>
+        </section>
+
+				<section>
+          <blockquote style="font-size: 32px">
+            "...when the language entered specification and standardization with ECMA, SUN (now
+            oracle) kept the trademark to the name java, [...] the name javascript could not be
+            used. The name then fell back on the name of the committee responsible for standardizing
+            it (ecma) and gradually became known as ECMA script."
+
+          </blockquote>
+          <p style="float: right; font-size: 18px">
+            - Wikipedia: https://en.wikipedia.org/wiki/ECMAScript
+          </p>
+
+        </section>
+
+				<section>
+          <h2>
+            What is TC39 responsible for?
+          </h2>
+
+          <div class="fragment">
+          <blockquote style="font-size: 32px">
+          <ul>
+            <li>
+            To maintain and update the standard for the ECMAScript programming language.
+            </li>
+            <li>
+            To identify, develop and maintain standards for libraries that extend the
+            capabilities of ECMAScript.
+            </li>
+            <li>
+            To develop test suites that may be used to verify correct implementation of
+            these standards.
+            </li>
+            <li>
+            To contribute selected standards to ISO/IEC JTC 1.
+            </li>
+            <li>
+            To evaluate and consider proposals for complementary or additional
+            technologies.
+            </li>
+          </ul>
+          </blockquote>
+          <p style="float: right; font-size: 18px">
+            <a href="https://www.ecma-international.org/memento/TC39.htm" target="_blank">Technical
+              Committee 39 of ECMA International</a>
+          </p>
+          </div>
+
+        </section>
+
+
+				<section>
+          <h2>
+            TC39 - Who is in it?
+          </h2>
+
+          <p class="fragment">
+            Members of ECMA are not individuals, they are organizations and corporations.
+          </p>
+
+          <p class="fragment">
+            As such, the members of the Technical committee 39 are organizations, not individuals,
+            but it is attended by individuals representing those organizations.
+          </p>
+        </section>
+
+				<section>
+          <h2>
+            TC39 - what do they actually do?
+          </h2>
+
+          <p class="fragment">
+            They meet on a regular basis and review proposals that are made for the language. They
+            standardize the language and ensure that it conforms to certain requirements
+          </p>
+        </section>
+
+				<section>
+          <h2>
+            What does a proposal look like?
+          </h2>
+          <p class="fragment">
+            It is a long process, and is done in four (five) parts!
+          </p>
+        </section>
+				<section>
+          <h2>
+            Stage 0: Strawman
+          </h2>
+          <p class="fragment" style="font-size: 32px">
+            Got an idea? Here is how you start:
+          </p>
+          <p class="fragment" style="font-size: 32px">
+            You will need to find a TC39 Champion (someone on the committee) to pick up your idea and presents it. You can get into this process
+            in a few ways. By registering on ECMA international, or via <a
+             href="https://esdiscuss.org/">esdiscuss</a>
+          </p>
+          <p class="fragment" style="font-size: 32px">
+            At this stage you need a good idea, not necessarily a demo (yet)
+          </p>
+          <p class="fragment" style="font-size: 32px">
+            if your idea isn't rejected, then you can continue working on it!
+          </p>
+          <p class="fragment" style="font-size: 32px">
+            expect a LOT of changes and critiques
+          </p>
+        </section>
+
+				<section>
+          <h2>
+            Stage 1: Proposal
+          </h2>
+          <p class="fragment" style="font-size: 32px">
+            Ok. You made it past the first stage, now you need a demo!
+          </p>
+          <p class="fragment" style="font-size: 32px">
+            In this stage you create an initial draft, often with a lot of feedback
+          </p>
+          <p class="fragment" style="font-size: 32px">
+            You will need to create an implementation that shows the proposed behavior, often as a
+            polyfill or something similar.
+          </p>
+          <p class="fragment" style="font-size: 32px">
+            expect some significant changes
+          </p>
+        </section>
+
+				<section>
+          <h2>
+            Stage 2: Draft
+          </h2>
+          <p class="fragment" style="font-size: 32px">
+            Woo! Draft stage! You have a demo, and you are starting to get specific
+          </p>
+          <div class="fragment">
+            <blockquote style="font-size: 32px">
+              all major semantics, syntax and API are covered, but TODOs, placeholders and editorial
+              issues are expected
+            </blockquote>
+            <p style="text-align: right; font-size: 18px">
+              <a href="https://www.ecma-international.org/memento/TC39.htm" target="_blank">Technical
+                Committee 39 of ECMA International</a>
+            </p>
+          </div>
+          <p class="fragment" style="font-size: 32px">
+            This means, you will have to write a language spec! This means describing the semantics
+            and syntax using formal spec language.
+          </p>
+          <p class="fragment" style="font-size: 32px">
+            expect some (but often minor) changes
+          </p>
+        </section>
+
+				<section>
+          <h2>
+            Stage 3: Candidate
+          </h2>
+          <p class="fragment" style="font-size: 32px">
+            Congratz! you have a Candidate. That means that it now needs input from a LOT of users.
+            It needs to go out into the wild. This might be as a browser implementation or similar.
+            You need lots of feedback from people who use your new feature.
+          </p>
+          <p class="fragment" style="font-size: 32px">
+            You will also need to write test262 acceptance tests, so that those implementing your
+            feature in the future will be able to run them against your tests.
+          </p>
+          <p class="fragment" style="font-size: 32px">
+            expect critical changes which will probably be suggested by people based on their
+            implementation experience
+          </p>
+        </section>
+
+				<section>
+          <h2>
+            Stage 4: Finished
+          </h2>
+          <p class="fragment" style="font-size: 32px">
+            Wow, that probably took a long time. But the feature is done!
+          </p>
+          <p class="fragment" style="font-size: 32px">
+            Now, it is up to browsers and engine writers to implement your feature. It may still be
+            some time before users use your new feature!
+          </p>
+        </section>
+
+				<section>
+          <h2>
+            Interested? Here are some Links!
+          </h2>
+          <ul>
+            <li>
+          <a href="https://tc39.github.io/process-document/">The TC39 Process</a>
+            </li>
+            <li>
+          <a href="https://github.com/tc39/proposals">Existing and ongoing proposals</a>
+            </li>
+            <li>
+          <a href="https://tc39.github.io/ecma262/">Current Spec</a>
+            </li>
+            <li>
+          <a href="https://esdiscuss.org/">ES Discuss</a>
+            </li>
+            </ul>
+        </section>
+
+				<section>
+          <h2>
+            Questions? Happy to hear them!
+          </h2>
+          <p class="fragment" style="font-size: 32px">
+            We are doing a TC39 Panel with people working on the committee and also people writing
+            proposals at JSConfEU!
+          </p>
+          <p class="fragment" style="font-size: 32px">
+            Feel free to tweet your questions to us as they come to you using the hashtag #tc39qs
+          </p>
+          <p class="fragment" style="font-size: 32px">
+            Or! Just come talk to me, I am taking notes!
+          </p>
+        </section>
+
+				<section>
+          <h2>
+            THANK YOU!
+          </h2>
+        </section>
+
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>
